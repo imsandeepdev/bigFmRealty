@@ -18,7 +18,7 @@ const WhyChooseSection = () => {
   ];
 
   const images = [
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/gallery/g2.webp",
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/banner.webp",
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/gallery/g3.webp",
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/plans/location-map.webp",
