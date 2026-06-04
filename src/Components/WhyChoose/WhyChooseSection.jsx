@@ -23,6 +23,7 @@ const WhyChooseSection = () => {
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/gallery/g3.webp",
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/plans/location-map.webp",
     "https://www.bigfmrealty.in/fmrealty-unimaxx-city/assets/images/gallery/g1.webp",
+    'https://cdn.100acress.com/in/properties/uploads/1773899370719-g5.webp'
   ];
 
   return (

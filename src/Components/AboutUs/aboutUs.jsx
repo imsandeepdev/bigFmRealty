@@ -10,6 +10,9 @@ const AboutSection = () => {
       <h2 className="text-3xl font-bold text-slate-900">
         About BIG FM Realty
       </h2>
+      <div className="flex justify-center mb-2">
+            <div className="h-0.5 w-80 rounded-full bg-gradient-to-r from-emerald-400 via-emerald-600 to-emerald-400"></div>
+        </div>
       <p className="mt-2 text-sm text-slate-600">
         Modern townships • Smart planning • Long-term value
       </p>

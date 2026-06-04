@@ -3,7 +3,7 @@ export const projects = [
     title: "Unimaxx City",
     location: "Sahara Ground Lucknow Main Road, Bahraich",
     image:
-      "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGRLfVqwWuvCYApXmsImvCe9Rv1WwWpWPFBeFKQ45rHIFbZ2PiHYB3dL_yASs19DvKOCLBRaTu1ViaUQYbdioDTkqon5VAJEQIu59nK5qarEbPskTBqkwrl4WWsL5VhpH91OwQk=s1360-w1360-h1020-rw",
+      "https://cdn.100acress.com/in/thumbnails/1773899564340-bb.webp",
   },
   {
     title: "FM Realty in Ayodhya",
@@ -20,6 +20,7 @@ export const projects = [
 ];
 
 export const ContactInfo = {
+  businessName: "BIG FM Realty",
   phone: "+91 99999 00440",
   email: "Info.bigfmrealty@gmail.com",
   address: "Sahara Ground Lucknow Main Road, Bahraich, UP",    

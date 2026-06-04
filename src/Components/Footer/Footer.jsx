@@ -1,7 +1,15 @@
 import React from "react";
 import { ContactInfo } from "../../utils/Const/Const";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
+    const phoneNumber = ContactInfo.phone.replace(/\s+/g, "");
+  
   return (
     <footer className="bg-slate-950 text-white">
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-12 lg:px-20">
@@ -20,38 +28,49 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* QUICK LINKS */}
           <div>
-            <h4 className="mb-4 text-lg font-semibold">
-              Quick Links
-            </h4>
+  <h4 className="mb-4 text-lg font-semibold">
+    Follow Us
+  </h4>
 
-            <ul className="space-y-2 text-sm text-slate-400">
-              <li>
-                <a href="#about" className="hover:text-emerald-400 transition">
-                  About Us
-                </a>
-              </li>
+  <div className="flex gap-3">
+    <a
+      href="https://facebook.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+    >
+      <FaFacebookF />
+    </a>
 
-              <li>
-                <a href="#projects" className="hover:text-emerald-400 transition">
-                  Projects
-                </a>
-              </li>
+    <a
+      href="https://instagram.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+    >
+      <FaInstagram />
+    </a>
 
-              <li>
-                <a href="#why-choose" className="hover:text-emerald-400 transition">
-                  Why Choose Us
-                </a>
-              </li>
+    <a
+      href="https://linkedin.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+    >
+      <FaLinkedinIn />
+    </a>
 
-              <li>
-                <a href="#contact" className="hover:text-emerald-400 transition">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+    <a
+      href="https://youtube.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+    >
+      <FaYoutube />
+    </a>
+  </div>
+</div>
 
           {/* CONTACT INFO */}
           <div>
@@ -64,11 +83,12 @@ const Footer = () => {
               <li>📍 {ContactInfo?.address}</li>
             </ul>
 
-            <button
-              className="mt-4 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium hover:bg-emerald-700 transition"
-            >
-              Enquire Now
-            </button>
+              <button
+                onClick={() => window.location.href = `tel:${phoneNumber}`}
+                className="mt-4 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium hover:bg-emerald-700 transition"
+              >
+                Enquire Now
+              </button>
           </div>
 
         </div>
