@@ -23,5 +23,8 @@ export const ContactInfo = {
   businessName: "BIG FM Realty",
   phone: "+91 99999 00440",
   email: "Info.bigfmrealty@gmail.com",
-  address: "Sahara Ground Lucknow Main Road, Bahraich, UP",    
+  address: "Sahara Ground Lucknow Main Road, Bahraich, UP",  
+  InstaGramLink: "https://www.instagram.com/info.bigfmrealty/",
+  FacebookLink: "https://www.facebook.com/profile.php?id=61590380286769", 
+  YoutubeLink: "https://www.youtube.com/@Info.Bigfmcity" 
 }

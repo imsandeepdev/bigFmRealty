@@ -29,48 +29,48 @@ const Footer = () => {
           </div>
 
           <div>
-  <h4 className="mb-4 text-lg font-semibold">
-    Follow Us
-  </h4>
+            <h4 className="mb-4 text-lg font-semibold">
+              Follow Us
+            </h4>
 
-  <div className="flex gap-3">
-    <a
-      href="https://facebook.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
-    >
-      <FaFacebookF />
-    </a>
+            <div className="flex gap-3">
+              <a
+                href={ContactInfo.FacebookLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+              >
+                <FaFacebookF />
+              </a>
 
-    <a
-      href="https://instagram.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
-    >
-      <FaInstagram />
-    </a>
+              <a
+                href={ContactInfo.InstaGramLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+              >
+                <FaInstagram />
+              </a>
 
-    <a
-      href="https://linkedin.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
-    >
-      <FaLinkedinIn />
-    </a>
+              {/* <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+              >
+                <FaLinkedinIn />
+              </a> */}
 
-    <a
-      href="https://youtube.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
-    >
-      <FaYoutube />
-    </a>
-  </div>
-</div>
+              <a
+                href={ContactInfo.YoutubeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 hover:bg-emerald-600 transition"
+              >
+                <FaYoutube />
+              </a>
+            </div>
+          </div>
 
           {/* CONTACT INFO */}
           <div>
