@@ -26,6 +26,7 @@ const Footer = () => {
               Premium residential and commercial real estate developments
               focused on modern living, smart planning and long-term value.
             </p>
+            <p className="mt-3 text-sm leading-6 text-slate-400">Rera No. UPRERAPRJ941711</p>
           </div>
 
           <div>

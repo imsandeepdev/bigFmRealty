@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Banner from "../../assets/banner.png";
 import { Phone } from "lucide-react";
 import { ContactInfo } from "../../utils/Const/Const";
+import PDFModal from "./PDFModal";
+import BigUnimax from "../../assets/BigUnimaxx.pdf"
 
 
 const HeroSection = () => {
   const phoneNumber = ContactInfo.phone.replace(/\s+/g, "");
+  const [openModal, setOpenModal] = useState(false);
 
   return (
    <section className="relative w-full h-[500px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
@@ -48,6 +51,8 @@ const HeroSection = () => {
           "
         >
    
+
+
            {/* LEFT CONTENT */}
            <motion.div
              initial={{ opacity: 0, y: 50 }}
@@ -67,12 +72,16 @@ const HeroSection = () => {
                transition={{ delay: 0.2 }}
                className="mt-6 text-5xl font-bold text-white !text-white"
              >
-               Discover Your
+                BIG UNIMAXX
                <span className="block text-emerald-400">
-                 Dream Property
+                 CITY
                </span>
               
              </motion.h1>
+
+             <p className="mt-2 text-1xl lg:text-3xl font-semibold text-white">
+              Largest Plotted Township.
+            </p>
    
              <motion.p
                initial={{ opacity: 0, y: 30 }}
@@ -80,7 +89,7 @@ const HeroSection = () => {
                transition={{ delay: 0.4 }}
                className="mt-5 max-w-xl text-base text-slate-200"
              >
-               Trusted development, smart planning and modern living for future-ready investment spaces.
+               Trusted Development, Smart Planning and Modern Living for Future-Ready Investment Spaces.
              </motion.p>
    
              {/* SMALL CTA BUTTONS */}
@@ -97,13 +106,30 @@ const HeroSection = () => {
                >
                  Explore
                </button>
+
+               <a
+                href={`tel:${phoneNumber}`}
+                className="
+                  px-5 py-2
+                  text-sm
+                  rounded-lg
+                  border
+                  border-white/60
+                  hover:bg-white
+                  hover:text-black
+                  transition
+                  font-medium
+                "
+              >
+                Contact
+              </a>
    
-               <button
+               {/* <button
                  onClick={() => setOpenModal(true)}
                  className="px-5 py-2 text-sm rounded-lg border border-white/60 hover:bg-white hover:text-black transition font-medium"
                >
                  Contact
-               </button>
+               </button> */}
    
              </motion.div>
    
@@ -121,7 +147,7 @@ const HeroSection = () => {
              }}
              className="w-full max-w-xs bg-white/10 backdrop-blur-xl border border-white/20 text-white rounded-2xl p-5 shadow-2xl cursor-pointer hidden lg:block"
              style={{ transformStyle: "preserve-3d" }}
-             onClick={() => (window.location.href = "/projects/big-unimaxx-city")}
+            //  onClick={() => (window.location.href = "/projects/big-unimaxx-city")}
            >
    
              <p className="text-emerald-300 text-xs font-semibold">
@@ -141,27 +167,15 @@ const HeroSection = () => {
                  Bahraich • UP
                </span>
    
-               {/* <button className="text-emerald-400 text-xs font-semibold hover:underline">
+               <button 
+                 onClick={(e) => {
+                  e.stopPropagation();
+                  setOpenModal(true);
+                }}
+               className="text-emerald-400 text-xs font-semibold hover:underline">
                  View →
-               </button> */}
-              <a
-                href={`tel:${phoneNumber}`}
-                className="
-                  flex items-center gap-2
-                  rounded-full
-                  bg-emerald-600
-                  px-2 py-1
-                  hover:bg-emerald-700
-                  transition
-                  shadow-lg
-                  font-medium
-                  text-sm
-                  border border-white/20
-                "
-              >
-                <Phone size={16} />
+               </button>
               
-              </a>
              </div>
    
            </motion.div>
@@ -170,6 +184,13 @@ const HeroSection = () => {
    
        </div>
      </div>
+
+    <PDFModal
+      isOpen={openModal}
+      onClose={() => setOpenModal(false)}
+      pdfUrl={BigUnimax}
+      title="BIG UNIMAXX City Brochure"
+    />
    
    </section>
   );

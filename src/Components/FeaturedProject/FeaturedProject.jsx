@@ -16,7 +16,7 @@ const FeaturedProjects = ({ projects, setOpenModal }) => {
         </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4">
 
   {projects.map((item) => (
     <div
@@ -72,7 +72,7 @@ const FeaturedProjects = ({ projects, setOpenModal }) => {
         )}
 
         {/* PUSH BUTTON TO BOTTOM */}
-        <div className="mt-auto pt-4">
+        <div className="mt-auto pt-1">
           <button
             onClick={() => setOpenModal(true)}
             className="text-xs font-semibold text-emerald-600 hover:underline"
